@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TESTMAUI.MainPage"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Label
+                Text="Realm Maui HotRestart issue"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Using method: https://learn.microsoft.com/nb-no/dotnet/maui/deployment/hot-restart?view=net-maui-6.0"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Write data to Realm"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="WriteDataToRealm"
+                HorizontalOptions="Center" />
+            <Label HorizontalOptions="Center" Text="Clicking the button will produce an error when trying to initiate Realm through Hot Restart and iPhone using Windows."/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
